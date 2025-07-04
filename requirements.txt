@@ -1,7 +1,6 @@
 streamlit
 fpdf
 pillow
-PIL
 streamlit-cropper
 google.generativeai
 langchain_community
