@@ -523,10 +523,16 @@ elif section == "📦 Export":
                 pdf.add_page()
                 pdf.set_auto_page_break(auto=True, margin=15)
                 pdf.set_font("Arial", size=12)
-                for line in text.split("\n"):
-                    pdf.multi_cell(0, 10, line)
+            # Fix for UnicodeEncodeError with emojis/non-latin chars
+            def remove_non_latin(text):
+                return text.encode('latin-1', 'ignore').decode('latin-1')
+            cleaned_text = remove_non_latin(text)
+            for line in cleaned_text.split("\n"):
+                pdf.multi_cell(0, 10, line)
+            pdf.output(pdf_output_path)
+
                 pdf_output_path = os.path.join("uploads", f"{base}_{file_name}.pdf") # Save to uploads to ensure path is correct
-                pdf.output(pdf_output_path)
+                
                 with open(pdf_output_path, "rb") as f:
                     st.download_button("📕 Download PDF", data=f, file_name=os.path.basename(pdf_output_path), mime="application/pdf", key=f"dl_pdf_{file_name}")
 
