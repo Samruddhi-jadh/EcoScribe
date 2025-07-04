@@ -14,8 +14,11 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 model = genai.GenerativeModel(model_name="models/gemini-1.5-flash-latest")
 
 def classify_document_type(text):
-    prompt = f"""
-You are an intelligent AI trained to classify documents into one of the following categories:
+    global model
+    if model is None:
+        model = genai.GenerativeModel(model_name="models/gemini-1.5-flash-latest")
+
+    prompt = f"""You are an intelligent AI trained to classify documents into one of the following categories:
 - Legal
 - Historical
 - Academic
@@ -29,7 +32,6 @@ Read the following text and assign the most appropriate category. Also explain w
 
 Return output in this format:
 Category: <Best match>
-Reason: <Short reason>
-"""
+Reason: <Short reason>"""
     response = model.generate_content(prompt)
     return response.text.strip()
