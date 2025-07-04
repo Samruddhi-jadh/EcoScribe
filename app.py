@@ -410,9 +410,8 @@ elif section == "🔁 Damage & Restore":
                 st.text_area("Damaged Text", damaged, height=250, key=f"damaged_{file_path}")
 
             with col2:
-                st.markdown("#### 🛠️ Restored Text")
-                restored_output = st.session_state.restored_text.get(file_path, "")
                 st.markdown("#### 🛠️ Restored Output (Click any word to ask why it was used)")
+                restored_output = st.session_state.restored_text.get(file_path, "")
                 html = clickable_text(restored_output, key_prefix=os.path.basename(file_path))
                 components.html(html, height=150, scrolling=True)
 
