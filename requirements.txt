@@ -5,6 +5,5 @@ streamlit-cropper
 google.generativeai
 langchain_community
 pytesseract
-tesseract-ocr
 
 
