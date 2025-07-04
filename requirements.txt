@@ -1,0 +1,8 @@
+streamlit
+streamlit_cropper
+python-dotenv
+fpdf
+Pillow
+google-generativeai
+langchain
+tesserocr
