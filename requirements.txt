@@ -6,4 +6,4 @@ streamlit-cropper
 google.generativeai
 langchain_community
 langchain_openai
-
+pytesseract
