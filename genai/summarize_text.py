@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Configure Gemini with your API key
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 # Use the Gemini Pro model (more stable than Flash)
 model = genai.GenerativeModel(model_name="models/gemini-1.5-flash-latest")
