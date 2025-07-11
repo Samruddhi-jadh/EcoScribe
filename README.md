@@ -4,12 +4,10 @@ EcoScribe is an AI-powered document restoration and intelligence platform that r
 (uploads/EcoScribe.png)
 
 ---
+## 🌐 Live Demo
 
-## 📽️ Demo Video
-
-🎬 Watch the 2-minute demo of EcoScribe in action:  
-**[▶️ Click to Watch the Video](https://your-video-link-here.com)**
-
+🔗 **Deployed App**: [[Try EcoScribe on Streamlit Cloud](https://ecoscribe-ai.streamlit.app/)](https://ecoscribe-ai.streamlit.app/)  
+🎥 **Demo Video**: [Watch 2-Minute Walkthrough](https://www.youtube.com/watch?v=your-demo-video-link)
 ---
 
 ## 🚀 Features
@@ -63,7 +61,7 @@ EcoScribe is an AI-powered document restoration and intelligence platform that r
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/your-username/ecoscribe.git
+git clone (https://github.com/Samruddhi-jadh/EcoScribe)
 cd ecoscribe
 ```
 
@@ -80,3 +78,5 @@ GEMINI_API_KEY=your_api_key_here
 
 4. **Run the streamlit app**
 ```bash
+streamlit run app.py
+```
