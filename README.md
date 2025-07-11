@@ -7,7 +7,6 @@ EcoScribe is an AI-powered document restoration and intelligence platform that r
 ## 🌐 Live Demo
 
 🔗 **Deployed App**: [[Try EcoScribe on Streamlit Cloud](https://ecoscribe-ai.streamlit.app/)](https://ecoscribe-ai.streamlit.app/)  
-🎥 **Demo Video**: [Watch 2-Minute Walkthrough](https://www.youtube.com/watch?v=your-demo-video-link)
 ---
 
 ## 🚀 Features
@@ -80,3 +79,27 @@ GEMINI_API_KEY=your_api_key_here
 ```bash
 streamlit run app.py
 ```
+5. **Repository Structure**
+ecoscribe/
+├── app.py
+├── genai/
+│   ├── restore_text.py
+│   ├── summarize_text.py
+│   ├── classify_text.py
+│   └── title_keyword.py
+├── ocr/
+│   └── ocr_utils.py
+├── requirements.txt
+├── .env
+└── uploads/
+
+6. **🔮 Future Scope**
+- 🧠 Fine-tuned domain-specific restoration (legal/historical)
+
+- 📚 Vector DB integration for RAG with custom knowledge bases
+
+- 🗂 Bulk export tools & admin dashboards
+
+- 🌍 Language expansion with inline translation
+
+- 🧩 Plugin architecture for modular AI workflows
