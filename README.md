@@ -1,7 +1,7 @@
 # 🕰️ EcoScribe :"Bringing historical documents back to life with AI-powered clarity, context, and creativity."
 EcoScribe is an AI-powered document restoration and intelligence platform that revives scanned, historical, and damaged documents using OCR and Generative AI. From text extraction to intelligent restoration and summarization, EcoScribe helps bring lost or degraded documents back to life — with modern usability.
 
-(uploads/EcoScribe.png)
+
 
 ---
 ## 🌐 Live Demo
