@@ -6,7 +6,7 @@ EcoScribe is an AI-powered document restoration and intelligence platform that r
 ---
 ## 🌐 Live Demo
 
-🔗 **Deployed App**: [[Try EcoScribe on Streamlit Cloud](https://ecoscribe-ai.streamlit.app/)](https://ecoscribe-ai.streamlit.app/)  
+**Deployed App**: [[Try EcoScribe on Streamlit Cloud](https://ecoscribe-ai.streamlit.app/)](https://ecoscribe-ai.streamlit.app/)  
 ---
 
 ## 🚀 Features
